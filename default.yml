@@ -3,8 +3,20 @@ AllCops:
   Exclude:
     - "db/schema.rb"
 
-Documentation:
-  Enabled: false
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/LineLength:
+  Max: 120
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
 
 Metrics/BlockLength:
   Exclude:
@@ -16,19 +28,13 @@ Metrics/ClassLength:
     - test/**/*
     - spec/**/*
 
-Metrics/LineLength:
-  Max: 120
-
 Metrics/MethodLength:
   Max: 20
 
-MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-MultilineMethodCallIndentation:
-  EnforcedStyle: indented
-
 Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
   Enabled: false
 
 Style/DoubleNegation:
@@ -36,9 +42,3 @@ Style/DoubleNegation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-Layout/IndentFirstHashElemen:
-  EnforcedStyle: consistent
-
-Layout/ParameterAlignment:
-  EnforcedStyle: with_fixed_indentation
