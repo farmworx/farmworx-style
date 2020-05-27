@@ -1,0 +1,44 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - "db/schema.rb"
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*
+    - spec/**/*
+
+Metrics/ClassLength:
+  Exclude:
+    - test/**/*
+    - spec/**/*
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/IndentFirstHashElemen:
+  EnforcedStyle: consistent
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
