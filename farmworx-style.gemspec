@@ -9,11 +9,11 @@ Gem::Specification.new do |spec|
   spec.email         = ['team@farmworx.io']
   spec.summary       = 'Farmworx style guides and shared style configs.'
   spec.homepage      = 'https://github.com/farmworx/farmworx-style'
-  spec.files         = `git ls-files -z`.split('\x0').reject do |f|
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
 
-  spec.add_dependency 'rubocop', '~> 0.74.0'
+  spec.add_dependency 'rubocop', '~> 0.84.0'
   spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'rake', '~> 13.0'
 end
